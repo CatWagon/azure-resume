@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: Inter, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/* common styles */
+a {
+    text-decoration: none;
+    color:lightseagreen
+}
+
+/* layouts */
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+/* profile */
+.profile-container{
+    display: flex;
+    gap: 2rem;
+}
+.header{
+    background-color: #39667B;
+    color: white;
+    padding: 20px;
+    border-top: 10px;
+    border-bottom: 10px;
+    box-sizing: border-box;
+
+}
+.my_name {
+    font-size: 36px;
+    margin: 0;
+    font-weight: normal;
+}
+.title{
+    font-size: 18px;
+    margin: 0;
+    color: #49C59E;
+    font-weight: normal;
+}
+.description{
+    font-size: 16px;
+    margin: 0;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 80px;
+    padding-right: 240px;
+    background-color: #1E4351;
+    box-sizing: border-box;
+}
+.no_bullet{
+    list-style:disc;
+    padding: 0;
+    margin: 0;
+}
+.column{
+    list-style-type: none;
+    color: white;
+}
+.ul{
+    list-style-position: inside;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.points{
+    font-size: 14px;
+    margin: 20px;
+    text-align: left;
+    list-style-position: inside;
+}
+.subheader{
+    margin: 10px;
+    font-size: 22px;
+    color: #49C59E;
+    text-decoration: underline;
+}
+
+.job{
+    margin: 15px;
+    font-size: 16px;
+}
+.grid_container li {
+    margin: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+    list-style: none;
+  }
+.count{
+    text-align: center;
+    font-size: 12px;
+}
